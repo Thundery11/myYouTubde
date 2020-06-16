@@ -1,0 +1,46 @@
+.block-3 [type="checkbox"] {
+  display: none;
+}
+.block-3 label.menu-toggleclass {
+  color: white;
+  padding-right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 650px) {
+  .dws-menu {
+    overflow: hidden;
+  }
+
+  .block-2 {
+    display: none;
+  }
+  .block-3 label.menu-toggleclass {
+    display: block;
+  }
+}
+@media all and (max-width: 420px){
+.block-1{
+  padding-right: 5px;
+}
+.block-3 label.menu-toggleclass {
+  padding-right: 0px;
+}
+.block-3{
+  padding-right: 15px;
+}
+.name-link {
+  padding-left: 10px;
+}
+.bell {
+  padding-left: 10px;
+}
+.apps {
+  padding-left: 10px;
+}
+.camera {
+  padding-left: 10px;
+}
+
+}

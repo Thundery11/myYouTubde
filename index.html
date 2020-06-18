@@ -12,8 +12,10 @@
       src="https://kit.fontawesome.com/c765b81f1a.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
+
     <nav class="dws-menu">
       <div class="block-1">
         <a class="menu" href="#"><i class="fas fa-bars"></i></a>
@@ -28,15 +30,16 @@
         <span class="up"><sup>by</sup> </span>
       </div>
       <div class="block-2">
+ 
         <input class="search">
           <input
-            class="search-area"
+            id="allsearch"
             type="search"
             name="poisk"
             placeholder="Введите зaпрос"
           />
           <div class="sb">
-           <input class="search-button" type="submit" value=""> 
+           <input class="search-button" type="submit" onclick="someFunc()" value=""> 
         
            <a class="keyboard" href="#"
       
@@ -62,5 +65,34 @@
       </div>
     </nav>
     <div class="scroll"></div>
+    <script>
+
+      window.onload = function(){
+        alert('Приветствую');
+      };
+    </script>
+
+  <!-- <input
+  type="search"
+name="gosearch"
+id="allsearch"
+placeholder="поиск по сайту"
+/>
+<input type="submit" value="найти" id="clickthis" onclick="someFunc()" />
+</form> -->
+<script>
+function someFunc() {
+let allsearch = document.getElementById("allsearch").value;
+alert(allsearch);
+function empty_form() {
+  let allsearch = document.getElementById("allsearch").value;
+  if (allsearch == "") {
+    alert("Вы забыли ввести текст.");
+    return false;
+  }
+
+}
+}
+</script>
   </body>
 </html>

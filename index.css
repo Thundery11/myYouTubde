@@ -51,7 +51,7 @@
 
   display: none;
 }
-.search-area {
+#allsearch {
   display: flex;
   width: 100%;
 

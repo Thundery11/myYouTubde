@@ -64,35 +64,32 @@
         /></a>
       </div>
     </nav>
-    <div class="scroll"></div>
-    <script>
+
+    
+
+
+ <script>
 
       window.onload = function(){
         alert('Приветствую');
       };
     </script>
 
-  <!-- <input
-  type="search"
-name="gosearch"
-id="allsearch"
-placeholder="поиск по сайту"
-/>
-<input type="submit" value="найти" id="clickthis" onclick="someFunc()" />
-</form> -->
+ 
 <script>
 function someFunc() {
 let allsearch = document.getElementById("allsearch").value;
-alert(allsearch);
-function empty_form() {
-  let allsearch = document.getElementById("allsearch").value;
-  if (allsearch == "") {
-    alert("Вы забыли ввести текст.");
-    return false;
-  }
+if (allsearch == '' || allsearch == null){
+  alert('вы забыли ввести текст');
+} else{
+  alert(allsearch);
+}
 
 }
-}
 </script>
+
+
+  
+  
   </body>
 </html>
